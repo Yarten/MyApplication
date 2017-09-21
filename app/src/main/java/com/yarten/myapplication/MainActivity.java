@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView helloText;
     private SeekBar seekBar;
 
-    public void fun1(){}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
