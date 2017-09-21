@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button startButton;
     private TextView helloText;
+    private SeekBar seekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,24 @@ public class MainActivity extends AppCompatActivity {
                     helloText.setVisibility(View.INVISIBLE);
                 }
                 else helloText.setVisibility(View.VISIBLE);
+            }
+        });
+
+        seekBar = (SeekBar)findViewById(R.id.seekBar);
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                helloText.setText(String.format("Bar %d", progress));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                helloText.setText("Bar Touch");
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
             }
         });
     }
