@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                if (helloText.getVisibility() == View.VISIBLE) {
-                    helloText.setVisibility(View.INVISIBLE);
-                }
-                else helloText.setVisibility(View.VISIBLE);
+            //    if (helloText.getVisibility() == View.VISIBLE) {
+            //        helloText.setVisibility(View.INVISIBLE);
+            //    }
+            //    else helloText.setVisibility(View.VISIBLE);
             }
         });
 
