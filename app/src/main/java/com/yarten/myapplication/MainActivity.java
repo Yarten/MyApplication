@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 if (helloText.getVisibility() == View.VISIBLE) {
                     helloText.setVisibility(View.INVISIBLE);
                 }
-            //    else helloText.setVisibility(View.VISIBLE);
+                else helloText.setVisibility(View.VISIBLE);
             }
         });
 
